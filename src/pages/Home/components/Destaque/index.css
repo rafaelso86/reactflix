@@ -1,0 +1,71 @@
+.destaque-principal {
+    width: 100%;
+    background-image: url('../../../../assets/images/bleach.jpg');
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    height: 65vh;
+    margin-bottom: 60px;
+}
+
+.destaque-principal .row {
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: relative;
+    z-index: 10;
+}
+
+.destaque-principal .row .content {
+    max-width: 445px;
+    width: 100%;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.destaque-principal .row .imagem-video {
+    max-width: 646px;
+    margin-right: 20px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
+
+@media (max-width: 960px) {
+    .destaque-principal {
+        padding: 20px;
+        height: auto;
+        position: relative;
+        width: auto;
+    }
+
+    .destaque-principal .row {
+        flex-wrap: wrap;
+        justify-content: center;
+        display: block;
+    }
+
+    .destaque-principal .row .content {
+        margin: 0;
+        display: flex;
+    }
+
+    .destaque-principal .descricao-video {
+        display: none;
+    }
+
+    .destaque-principal .row .imagem-video {
+        margin: 0;
+        margin-top: 15px;
+        width: 100%;
+        max-width: inherit;
+    }
+}

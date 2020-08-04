@@ -1,0 +1,52 @@
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: #000;
+    border-bottom: 1px solid #a3a3a3;
+    z-index: 999;
+}
+
+.menu{   
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.btn-menu {
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    padding: 8px 18px;
+}
+
+.logo{
+    max-width: 145px;
+}
+
+@media (max-width: 960px){
+    .menu {
+        padding: 15px;
+    }
+
+    .logo{
+        max-width: 105px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .btn-menu{
+        border: none;
+        position: relative;
+        bottom: 0;
+        background-color: #000;
+        color: #fff;
+        padding: 0;
+        color: transparent;
+        width: 24px;
+        height: 24px;
+        background-image: url('../../assets/images/add-button.png');
+        background-repeat: no-repeat;
+    }
+}
